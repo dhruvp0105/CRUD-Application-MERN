@@ -1,0 +1,15 @@
+.navbar-wrapper{
+  background-color: rgb(250, 239, 183);
+}
+
+.add_btn{
+  text-align:right ;
+}
+
+.container{
+  overflow: auto;
+}
+
+.right-view{
+  padding-top: 3%;
+}
