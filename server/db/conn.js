@@ -1,5 +1,6 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
-const DB = "mongodb+srv://dhruv:dhruv@cluster0.ahz7xbh.mongodb.net/CRUD"
+const DB =process.env.DATABASE;
 const connection = mongoose.connect(DB, {
     useUnifiedTopology: true,
     useNewUrlParser: true
