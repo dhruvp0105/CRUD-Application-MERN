@@ -33,7 +33,7 @@ const Edit = () => {
 
     const getdata = async () => {
 
-        const res = await fetch(`/getuser/${id}`, {
+        const res = await fetch(`https://crud-application-7iah.onrender.com/getuser/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -60,7 +60,7 @@ const Edit = () => {
     const updateuser = async (e) => {
         e.preventDefault();
         const { name, email, age, mobile, work, address, description } = inpval;
-        const res2 = await fetch(`/updateuser/${id}`, {
+        const res2 = await fetch(`https://crud-application-7iah.onrender.com/updateuser/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

@@ -18,7 +18,7 @@ const Home = () => {
 
     const getdata = async () => {
 
-        const res = await fetch("/getdata", {
+        const res = await fetch("https://crud-application-7iah.onrender.com/getdata", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -42,7 +42,7 @@ const Home = () => {
     }, [])
 
     const deleteUser = async (id) => {
-        const res2 = await fetch(`/deleteuser/${id}`, {
+        const res2 = await fetch(`https://crud-application-7iah.onrender.com/deleteuser/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
